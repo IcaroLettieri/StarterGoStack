@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS</title>
+</head>
+<body>
+    <script>
+        
+        function soma(n1, n2){
+            var result = n1 + n2;
+
+            return result;
+        }
+        function retornaSexo(sexo){
+            // M, F
+            // Masculino, Feminino
+
+            if (sexo === 'M'){
+                return "Masculino";
+            } else if(sexo === 'F') {
+                return "Feminino";
+            } else {
+                return 'Outros';
+            }   
+
+            switch (sexo) {
+                case 'M':
+                    return "Masculino";
+                    break;
+                case 'F':
+                    return "Feminino";
+                    break;
+                default:
+                    return 'Outros';
+                    break;
+            }
+        }
+
+        console.log(soma(1, 2));
+
+        console.log(retornaSexo('M'));
+
+    </script>
+</body>
+</html>
